@@ -1,144 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Web book programming</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Web book programming</title>
 </head>
+
 <body>
-    <main dir="rtl">
-	<div>
-		<h1>فصل اول: مبانی برنامه نویسی</h1>
-		<h2>مقدمه</h2>
-		<p><strong>برنامه نویسی چیست و چرا باید آن را یاد گرفت؟<br /></strong></p>
-		<section id="introduction">
-					<p>برنامه‌نویسی اساساً راهی برای برقراری ارتباط با کامپیوترها است. فرآیند نوشتن دستورالعمل‌های دقیقی است که کامپیوترها می توانند درک و اجرا کنند. آن را به‌عنوان آموزش وظایف به یک ربات در نظر بگیرید، اما به‌جای دادن دستورات به زبان انسانی، از کد استفاده می‌کنیم.</p>
-		</section>
-		<section id="request-response">
-			<h2>چرا یادگیری کدنویسی؟</h2>
-			<p>یادگیری کدنویسی دنیایی از امکانات را باز می کند. در اینجا فقط چند دلیل وجود دارد که چرا برنامه‌نویسی یک مهارت ارزشمند است:</p>
-			<div>
-				<ul>
-					<li>حل مسئله: برنامه نویسی به شما می آموزد که منطقی فکر کنید و مشکلات را به صورت خلاقانه حل کنید.</li>
-					<li>فرصت های شغلی: با توجه به اینکه همه چیز در حال حرکت آنلاین است، مهارت های برنامه‌نویسی در بسیاری از صنایع مورد تقاضا هستند.
-</li>
-					<li>ایده ها را زنده کنید: برنامه نویسی به شما امکان می دهد وب سایت ها، برنامه ها، بازی ها و موارد دیگر خود را بسازید.</li>
-					<li>دنیای دیجیتال را درک کنید: به شما کمک می کند نحوه عملکرد نرم افزار و وب سایت هایی که هر روز از آنها استفاده می کنید را درک کنید.
-</li>
-				</ul>
-			</div>
-		</section>
-		<section id="authentication">
-			<h2>مفاهیم برنامه نویسی
-</h2>
-			<p>بیایید یک مثال ساده ریم در نظر بگیریم تا قدرت برنامه نویسی را نشان دهیم. به ایجاد یک ماشین حساب بودجه شخصی فکر کنید. به جای محاسبه دستی هزینه ها و پس انداز خود در هر ماه، می توانید برنامه ای بنویسید که این کار را برای شما انجام دهد. درآمد و هزینه های ماهانه خود را وارد میکنید و برنامه پس انداز شما را محاسبه می کند. این یک مثال اساسی از خودکار کردن یک کار از طریق برنامه نویسی است.</p>
-			<h5>در اینجا چند مفهوم پایه‌ای وجود دارد که می‌توانند در شروع به شما کمک کنند:</h5>
-			<ol>
-				<li>
-					متغیرها / Variables:
-					<p>
-						یک متغیر در برنامه نویسی شبیه به جعبه ای در دنیای واقعی کار می کند که می توانید چیزی را در آن قرار دهید. در این حالت، شما اشیاء فیزیکی را در آن قرار نمی دهید، بلکه اطلاعات یا داده ها را در آن قرار می دهید. در برنامه نویسی به فرآیند «قرار دادن چیزی» می گویند.
-					</p>
-					<p>
-						برای اینکه بتوانید به این کادر (متغیر) ارجاع دهید، نامی به آن می دهید. این نام به شما کمک می کند بعدا به راحتی به اطلاعات ذخیره شده در آن دسترسی داشته باشید. به عنوان مثال، اگر متغیری به نام سن دارید، مانند این است که یک جعبه با برچسب "سن" دارید که می توانید سن یک فرد را در آن ذخیره کنید.
-					</p>
-					<img src="" alt="aks1"/>
-					<p>
-						مثال: <br/> تصور کنید می خواهید سن یک فرد را در برنامه خود ذخیره کنید. ابتدا یک متغیر ایجاد می‌کنید و نامی برای آن می‌گذارید که آنچه را که ذخیره می‌کند، به عنوان مثال سن، توصیف می‌کند. سپس به این متغیر یک مقدار اختصاص می‌دهید، مثلاً 30. در بسیاری از زبان‌های برنامه‌نویسی به این صورت است: <br/>age = 30; <br/>در این مثال:
-<br/>age نام متغیر است مانند برچسب روی جعبه ما.
-					</p>
-				</li>
-					<li>= عملگر( Operator) انتساب است که برای تخصیص یک مقدار به متغیر استفاده می شود مانند قرار دادن یک آیتم در کادر.
-						<p>
-							30  مقداری ( Value) است که به متغیر اختصاص می دهیم مانند موردی که در کادر قرار داده ایم.
-<br/>بعد از اینکه یک مقدار را به یک متغیر اختصاص دادید، می توانید آن مقدار را بعداً با استفاده از نام متغیر در برنامه بازیابی کنید. بنابراین اگر بعداً می خواهید بررسی کنید که آیا فرد بالای 18 سال دارد، می توانید از شرایطی استفاده کنید که به این صورت است:
-							<img src="" alt="aks2"/>
-							استفاده از متغیرها برنامه شما را انعطاف پذیر و قابل استفاده مجدد می کند زیرا می توانید به راحتی مقادیری را که متغیرها نگه می دارند بدون نیاز به تغییر همه کدها تغییر دهید. می توانید تصور کنید که استفاده از متغیرها مانند نگه داشتن جعبه هایی است که می توانید محتویات آنها را در هر زمان بدون نیاز به تغییر برچسب روی جعبه (نام متغیر) تعویض کنید. <br/>در برنامه ها می توانید با مقادیر موجود در متغیرها محاسبه کنید، آنها را مقایسه کنید، از آنها در شرایط / Conditions استفاده کنید و موارد دیگر. متغیرها برای ایجاد انعطاف پذیری و پویایی برنامه ها بسیار مفید هستند. شما می توانید مقدار یک متغیر را در طول زمان اجرای برنامه خود تغییر دهید، به این معنی که رفتار برنامه شما می تواند مطابق با آن سازگار شود.
-						</p>
-					</li>
-				
-					<ul>
-  <li>انواع داده (Data):
-    <ul>
-      <li>اعداد صحیح (Integer, Int):
-        <ul>
-          <li>اعداد بدون اعشار هستند. آنها می‌توانند مثبت یا منفی باشند.</li>
-          <li>مثال: <code>42</code>، <code>-7</code></li>
-        </ul>
-      </li>
-      <li>اعداد ممیز شناور (Float):
-        <ul>
-          <li>اعدادی هستند که اعشار دارند. آنها برای مقادیر دقیق تر استفاده می‌شوند.</li>
-          <li>مثال: <code>3.14</code>، <code>-0.001</code></li>
-        </ul>
-      </li>
-      <li>رشته‌های کاراکتر (Strings):
-        <ul>
-          <li>دنباله‌ای از کاراکترها هستند که متن را نشان می‌دهند.</li>
-          <li>مثال: "<code>سلام جهان</code>"، "<code>1234</code>"</li>
-        </ul>
-      </li>
-      <li>ارزشهای حقیقت (بولیان Boolean):
-        <ul>
-          <li>مقادیر حقیقت را نشان می‌دهند و فقط می‌توانند دو مقدار بگیرند: true یا false.</li>
-          <li>مثال: "<code>درست</code>"، "<code>نادرست</code>"</li>
-        </ul>
-      </li>
-      <li>فهرست Arrays:
-        <ul>
-          <li>مجموعه‌های مرتب شده‌ای از عناصر هستند که می‌توانند انواع مختلفی از داده‌ها را در بر گیرند.</li>
-          <li>مثال: "<code>[1، 2، 3]</code>"، "<code>["سیب"، "موز"، "گیلاس"]</code>"</li>
-        </ul>
-      </li>
-      <li>تاپل ها (Tuple):
-        <ul>
-          <li>شبیه به لیست ها هستند، اما تغییر ناپذیرند.</li>
-          <li>مثال: "<code>(1، "سلام"، درست است)</code>"</li>
-        </ul>
-      </li>
-      <li>فرهنگ لغت (Dictionaries):
-        <ul>
-          <li>جفت کلیدها و مقادیر را ذخیره می‌کنند.</li>
-          <li>مثال: "<code>{"name": "Emma"، "age": 30}</code>"</li>
-        </ul>
-      </li>
-      <li>تعداد (مجموعه Set):
-        <ul>
-          <li>مجموعه‌هایی از عناصر منحصر به فرد بدون ترتیب خاصی هستند.</li>
-          <li>مثال: "<code>{1، 2، 3، 4}</code>"</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li>عملگرها (Operators):
-    <ul>
-      <li>این نمادها به رایانه می‌گویند که چگونه با داده‌ها تعامل داشته باشد:</li>
-      <li>حسابگری: (+، -، *، /) برای محاسبات.</li>
-      <li>مقایسه: (==، !=، >، <) برای مقایسه مقادیر.</li>
-      <li>منطقی: ( و and، یا or، نه not) برای ترکیب شرایط.</li>
-    </ul>
-  </li>
-</ul>
-<ul>
+  <main dir="rtl">
+    <div>
+      <h1>فصل اول: مبانی برنامه نویسی</h1>
+      <h2>مقدمه</h2>
+      <p><strong>برنامه نویسی چیست و چرا باید آن را یاد گرفت؟<br /></strong></p>
+      <section id="introduction">
+        <p>برنامه‌نویسی اساساً راهی برای برقراری ارتباط با کامپیوترها است. فرآیند نوشتن دستورالعمل‌های دقیقی است که
+          کامپیوترها می توانند درک و اجرا کنند. آن را به‌عنوان آموزش وظایف به یک ربات در نظر بگیرید، اما به‌جای دادن
+          دستورات به زبان انسانی، از کد استفاده می‌کنیم.</p>
+      </section>
+      <section id="request-response">
+        <h2>چرا یادگیری کدنویسی؟</h2>
+        <p>یادگیری کدنویسی دنیایی از امکانات را باز می کند. در اینجا فقط چند دلیل وجود دارد که چرا برنامه‌نویسی یک مهارت
+          ارزشمند است:</p>
+        <div>
+          <ul>
+            <li>حل مسئله: برنامه نویسی به شما می آموزد که منطقی فکر کنید و مشکلات را به صورت خلاقانه حل کنید.</li>
+            <li>فرصت های شغلی: با توجه به اینکه همه چیز در حال حرکت آنلاین است، مهارت های برنامه‌نویسی در بسیاری از
+              صنایع مورد تقاضا هستند.
+            </li>
+            <li>ایده ها را زنده کنید: برنامه نویسی به شما امکان می دهد وب سایت ها، برنامه ها، بازی ها و موارد دیگر خود
+              را بسازید.</li>
+            <li>دنیای دیجیتال را درک کنید: به شما کمک می کند نحوه عملکرد نرم افزار و وب سایت هایی که هر روز از آنها
+              استفاده می کنید را درک کنید.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="authentication">
+        <h2>مفاهیم برنامه نویسی
+        </h2>
+        <p>بیایید یک مثال ساده ریم در نظر بگیریم تا قدرت برنامه نویسی را نشان دهیم. به ایجاد یک ماشین حساب بودجه شخصی
+          فکر کنید. به جای محاسبه دستی هزینه ها و پس انداز خود در هر ماه، می توانید برنامه ای بنویسید که این کار را برای
+          شما انجام دهد. درآمد و هزینه های ماهانه خود را وارد میکنید و برنامه پس انداز شما را محاسبه می کند. این یک مثال
+          اساسی از خودکار کردن یک کار از طریق برنامه نویسی است.</p>
+        <h5>در اینجا چند مفهوم پایه‌ای وجود دارد که می‌توانند در شروع به شما کمک کنند:</h5>
+        <ol>
+          <li>
+            متغیرها / Variables:
+            <p>
+              یک متغیر در برنامه نویسی شبیه به جعبه ای در دنیای واقعی کار می کند که می توانید چیزی را در آن قرار دهید.
+              در این حالت، شما اشیاء فیزیکی را در آن قرار نمی دهید، بلکه اطلاعات یا داده ها را در آن قرار می دهید. در
+              برنامه نویسی به فرآیند «قرار دادن چیزی» می گویند.
+            </p>
+            <p>
+              برای اینکه بتوانید به این کادر (متغیر) ارجاع دهید، نامی به آن می دهید. این نام به شما کمک می کند بعدا به
+              راحتی به اطلاعات ذخیره شده در آن دسترسی داشته باشید. به عنوان مثال، اگر متغیری به نام سن دارید، مانند این
+              است که یک جعبه با برچسب "سن" دارید که می توانید سن یک فرد را در آن ذخیره کنید.
+            </p>
+            <img src="" alt="aks1" />
+            <p>
+              مثال: <br /> تصور کنید می خواهید سن یک فرد را در برنامه خود ذخیره کنید. ابتدا یک متغیر ایجاد می‌کنید و
+              نامی برای آن می‌گذارید که آنچه را که ذخیره می‌کند، به عنوان مثال سن، توصیف می‌کند. سپس به این متغیر یک
+              مقدار اختصاص می‌دهید، مثلاً 30. در بسیاری از زبان‌های برنامه‌نویسی به این صورت است: <br />age = 30;
+              <br />در این مثال:
+              <br />age نام متغیر است مانند برچسب روی جعبه ما.
+            </p>
+          </li>
+          <li>= عملگر( Operator) انتساب است که برای تخصیص یک مقدار به متغیر استفاده می شود مانند قرار دادن یک آیتم در
+            کادر.
+            <p>
+              30 مقداری ( Value) است که به متغیر اختصاص می دهیم مانند موردی که در کادر قرار داده ایم.
+              <br />بعد از اینکه یک مقدار را به یک متغیر اختصاص دادید، می توانید آن مقدار را بعداً با استفاده از نام
+              متغیر در برنامه بازیابی کنید. بنابراین اگر بعداً می خواهید بررسی کنید که آیا فرد بالای 18 سال دارد، می
+              توانید از شرایطی استفاده کنید که به این صورت است:
+              <img src="" alt="aks2" />
+              استفاده از متغیرها برنامه شما را انعطاف پذیر و قابل استفاده مجدد می کند زیرا می توانید به راحتی مقادیری را
+              که متغیرها نگه می دارند بدون نیاز به تغییر همه کدها تغییر دهید. می توانید تصور کنید که استفاده از متغیرها
+              مانند نگه داشتن جعبه هایی است که می توانید محتویات آنها را در هر زمان بدون نیاز به تغییر برچسب روی جعبه
+              (نام متغیر) تعویض کنید. <br />در برنامه ها می توانید با مقادیر موجود در متغیرها محاسبه کنید، آنها را
+              مقایسه کنید، از آنها در شرایط / Conditions استفاده کنید و موارد دیگر. متغیرها برای ایجاد انعطاف پذیری و
+              پویایی برنامه ها بسیار مفید هستند. شما می توانید مقدار یک متغیر را در طول زمان اجرای برنامه خود تغییر
+              دهید، به این معنی که رفتار برنامه شما می تواند مطابق با آن سازگار شود.
+            </p>
+          </li>
+
+          <ul>
+            <li>انواع داده (Data):
+              <ul>
+                <li>اعداد صحیح (Integer, Int):
+                  <ul>
+                    <li>اعداد بدون اعشار هستند. آنها می‌توانند مثبت یا منفی باشند.</li>
+                    <li>مثال: <code>42</code>، <code>-7</code></li>
+                  </ul>
+                </li>
+                <li>اعداد ممیز شناور (Float):
+                  <ul>
+                    <li>اعدادی هستند که اعشار دارند. آنها برای مقادیر دقیق تر استفاده می‌شوند.</li>
+                    <li>مثال: <code>3.14</code>، <code>-0.001</code></li>
+                  </ul>
+                </li>
+                <li>رشته‌های کاراکتر (Strings):
+                  <ul>
+                    <li>دنباله‌ای از کاراکترها هستند که متن را نشان می‌دهند.</li>
+                    <li>مثال: "<code>سلام جهان</code>"، "<code>1234</code>"</li>
+                  </ul>
+                </li>
+                <li>ارزشهای حقیقت (بولیان Boolean):
+                  <ul>
+                    <li>مقادیر حقیقت را نشان می‌دهند و فقط می‌توانند دو مقدار بگیرند: true یا false.</li>
+                    <li>مثال: "<code>درست</code>"، "<code>نادرست</code>"</li>
+                  </ul>
+                </li>
+                <li>فهرست Arrays:
+                  <ul>
+                    <li>مجموعه‌های مرتب شده‌ای از عناصر هستند که می‌توانند انواع مختلفی از داده‌ها را در بر گیرند.</li>
+                    <li>مثال: "<code>[1، 2، 3]</code>"، "<code>["سیب"، "موز"، "گیلاس"]</code>"</li>
+                  </ul>
+                </li>
+                <li>تاپل ها (Tuple):
+                  <ul>
+                    <li>شبیه به لیست ها هستند، اما تغییر ناپذیرند.</li>
+                    <li>مثال: "<code>(1، "سلام"، درست است)</code>"</li>
+                  </ul>
+                </li>
+                <li>فرهنگ لغت (Dictionaries):
+                  <ul>
+                    <li>جفت کلیدها و مقادیر را ذخیره می‌کنند.</li>
+                    <li>مثال: "<code>{"name": "Emma"، "age": 30}</code>"</li>
+                  </ul>
+                </li>
+                <li>تعداد (مجموعه Set):
+                  <ul>
+                    <li>مجموعه‌هایی از عناصر منحصر به فرد بدون ترتیب خاصی هستند.</li>
+                    <li>مثال: "<code>{1، 2، 3، 4}</code>"</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>عملگرها (Operators):
+              <ul>
+                <li>این نمادها به رایانه می‌گویند که چگونه با داده‌ها تعامل داشته باشد:</li>
+                <li>حسابگری: (+، -، *، /) برای محاسبات.</li>
+                <li>مقایسه: (==، !=، >، <) برای مقایسه مقادیر.</li>
+                <li>منطقی: ( و and، یا or، نه not) برای ترکیب شرایط.</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
 
 
 
-  <li>. شرط‌ها (Conditional Statements (If-Else:
-    <ul>
-      <li>ساختار پایه دستورالعمل "if":
-        <ul>
-          <li>شرط ارزیابی می‌شود و اگر true باشد، دستورات داخل بلاک اجرا می‌شوند. اگر شرط false باشد، بلاک نادیده گرفته می‌شود.</li>
-        </ul>
-      </li>
-      <li>دستورالعمل های "if" پیشرفته:
-        <ul>
-          <li>برای تصمیم‌گیری‌های پیچیده‌تر، می‌توان "if" را با "else" و "else if" گسترش داد که چندین شرط و اقدامات مربوطه را امکان پذیر می‌کند.</li>
-          <li>مثال:
-            <pre>
+            <li>. شرط‌ها (Conditional Statements (If-Else:
+              <ul>
+                <li>ساختار پایه دستورالعمل "if":
+                  <ul>
+                    <li>شرط ارزیابی می‌شود و اگر true باشد، دستورات داخل بلاک اجرا می‌شوند. اگر شرط false باشد، بلاک
+                      نادیده گرفته می‌شود.</li>
+                  </ul>
+                </li>
+                <li>دستورالعمل های "if" پیشرفته:
+                  <ul>
+                    <li>برای تصمیم‌گیری‌های پیچیده‌تر، می‌توان "if" را با "else" و "else if" گسترش داد که چندین شرط و
+                      اقدامات مربوطه را امکان پذیر می‌کند.</li>
+                    <li>مثال:
+                      <pre>
               <code>
 if (دما > 25) {
   لباس = "تی شرت";
@@ -149,545 +178,568 @@ if (دما > 25) {
 }
               </code>
             </pre>
-          </li>
-      </ul>
-      <li>عملگرهای منطقی:
-        <ul>
-          <li>برای بیان شرایط پیچیده‌تر، می‌توانید از عملگرهای منطقی مانند && (و)، || (یا) و ! (نه) برای ترکیب چندین شرط استفاده کنید.</li>
-          <li>مثال:
-            <pre>
+                    </li>
+                  </ul>
+                <li>عملگرهای منطقی:
+                  <ul>
+                    <li>برای بیان شرایط پیچیده‌تر، می‌توانید از عملگرهای منطقی مانند && (و)، || (یا) و ! (نه) برای ترکیب
+                      چندین شرط استفاده کنید.</li>
+                    <li>مثال:
+                      <pre>
               <code>
 if (دما > 20 && آفتابی) {
   روز = "perfect برای ساحل";
 }
               </code>
             </pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
 
 
-<ul>
-  <li>
-    5. حلقه‌ها (Loops):
-    <p>اگر می‌خواهید برنامه شما بارها و بارها کاری را انجام دهد، مثلاً گذر از لیستی از کارها، می‌توانید از حلقه‌ها استفاده کنید. یک حلقه به کامپیوتر می‌گوید که یک بلوک از دستورالعمل‌ها را تا زمانی که یک شرط خاص برآورده شود، تکرار کند. حلقه‌ها در برنامه‌نویسی برای مدیریت کارهای تکراری به طور کارآمد ضروری هستند. انواع مختلفی از حلقه‌ها در اکثر زبان‌های برنامه‌نویسی موجود هستند و هر کدام کاربردهای خاص خود را دارند. بیایید مفاهیم پایه و چند مثال را بررسی کنیم:</p>
-    <ul>
-      <li>
-        حلقه‌های For:
-        <p>یک حلقه For زمانی استفاده می‌شود که دقیقاً می‌دانید چند بار باید یک بلوک از دستورات اجرا شود. این حلقه برای پیمایش در لیست‌ها (آرایه‌ها) یا سایر مجموعه‌ها بسیار مفید است.
-</p>
-    <img src="" alt="image for halghe for">
+          <ul>
+            <li>
+              5. حلقه‌ها (Loops):
+              <p>اگر می‌خواهید برنامه شما بارها و بارها کاری را انجام دهد، مثلاً گذر از لیستی از کارها، می‌توانید از
+                حلقه‌ها استفاده کنید. یک حلقه به کامپیوتر می‌گوید که یک بلوک از دستورالعمل‌ها را تا زمانی که یک شرط خاص
+                برآورده شود، تکرار کند. حلقه‌ها در برنامه‌نویسی برای مدیریت کارهای تکراری به طور کارآمد ضروری هستند.
+                انواع مختلفی از حلقه‌ها در اکثر زبان‌های برنامه‌نویسی موجود هستند و هر کدام کاربردهای خاص خود را دارند.
+                بیایید مفاهیم پایه و چند مثال را بررسی کنیم:</p>
+              <ul>
+                <li>
+                  حلقه‌های For:
+                  <p>یک حلقه For زمانی استفاده می‌شود که دقیقاً می‌دانید چند بار باید یک بلوک از دستورات اجرا شود. این
+                    حلقه برای پیمایش در لیست‌ها (آرایه‌ها) یا سایر مجموعه‌ها بسیار مفید است.
+                  </p>
+                  <img src="" alt="image for halghe for">
 
-        <ul>
-          <li>
-            <strong>مثال عملی:</strong>
-            <p>فرض کنید می‌خواهید اعداد 1 تا 5 را روی صفحه نمایش دهید:
-</p>
-<img src="" alt="aks mesal amali">
-          </li>
-        <p> این مثال، متغیر i از 1 شروع می‌شود و تا زمانی که i کوچکتر یا مساوی 5 باشد، حلقه اجرا می‌شود. بعد از هر بار اجرا، i به اندازه 1 افزایش می‌یابد.
-</p>
-        </ul>
-      </li>
+                  <ul>
+                    <li>
+                      <strong>مثال عملی:</strong>
+                      <p>فرض کنید می‌خواهید اعداد 1 تا 5 را روی صفحه نمایش دهید:
+                      </p>
+                      <img src="" alt="aks mesal amali">
+                    </li>
+                    <p> این مثال، متغیر i از 1 شروع می‌شود و تا زمانی که i کوچکتر یا مساوی 5 باشد، حلقه اجرا می‌شود. بعد
+                      از هر بار اجرا، i به اندازه 1 افزایش می‌یابد.
+                    </p>
+                  </ul>
+                </li>
 
-      <li>
-        حلقه‌های While:
-        <ul>
-          <li>
-            <strong>مثال عملی:</strong>
-           <p>یک حلقه While تا زمانی که یک شرط برقرار باشد، دستورات را اجرا می‌کند. این حلقه زمانی ایده‌آل است که تعداد دفعات اجرا از قبل مشخص نیست.</p>
-           <img src="" alt="aks baraye while">
-          </li>
-<p>            <strong>مثال عملی:</strong>
-</p>   
-<p>
-    فرض کنید یک شمارنده دارید که تا زمانی که یک عدد تصادفی بزرگتر از 0.8 باشد، افزایش می‌یابد:
+                <li>
+                  حلقه‌های While:
+                  <ul>
+                    <li>
+                      <strong>مثال عملی:</strong>
+                      <p>یک حلقه While تا زمانی که یک شرط برقرار باشد، دستورات را اجرا می‌کند. این حلقه زمانی ایده‌آل
+                        است که تعداد دفعات اجرا از قبل مشخص نیست.</p>
+                      <img src="" alt="aks baraye while">
+                    </li>
+                    <p> <strong>مثال عملی:</strong>
+                    </p>
+                    <p>
+                      فرض کنید یک شمارنده دارید که تا زمانی که یک عدد تصادفی بزرگتر از 0.8 باشد، افزایش می‌یابد:
 
-</p>
-<img src="" alt="aks mesal amali2"/>
-     </ul>
-      </li>
+                    </p>
+                    <img src="" alt="aks mesal amali2" />
+                  </ul>
+                </li>
 
 
-      <li>
-        حلقه‌های Do-While:
-        <ul>
-          <li>
-            <strong>مثال عملی:</strong>
-          <p>حلقه Do-While شبیه به حلقه While است، با این تفاوت که دستورات حداقل یک بار قبل از بررسی شرط اجرا می‌شوند.</p>
-          <img src="" alt="aks do-while">
-          </li>
-<p>            <strong>مثال عملی:</strong>
-<p>
-    فرض کنید می‌خواهید یک پیام را حداقل یک بار نمایش دهید و سپس تا زمانی که کاربر می‌خواهد، آن را نمایش دهید:
+                <li>
+                  حلقه‌های Do-While:
+                  <ul>
+                    <li>
+                      <strong>مثال عملی:</strong>
+                      <p>حلقه Do-While شبیه به حلقه While است، با این تفاوت که دستورات حداقل یک بار قبل از بررسی شرط
+                        اجرا می‌شوند.</p>
+                      <img src="" alt="aks do-while">
+                    </li>
+                    <p> <strong>مثال عملی:</strong>
+                    <p>
+                      فرض کنید می‌خواهید یک پیام را حداقل یک بار نمایش دهید و سپس تا زمانی که کاربر می‌خواهد، آن را
+                      نمایش دهید:
 
-</p>   
-<img src="" alt="">
-<p>حلقه‌ها ابزاری قدرتمند در برنامه‌نویسی برای جلوگیری از تکرار کد و کنترل اجرای دستورات بر اساس شرایط هستند. انتخاب بین حلقه‌های For، While و Do-While به موقعیت خاص و نوع شرطی که تکرار باید تحت آن انجام شود بستگی دارد</p>
-     </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li>
-    توابع (Functions):
-    <ul>
-      <li>
-        یک تابع (Function) مجموعه‌ای از انجام دستورالعمل‌ها است که برای دادن یک کار خاص جمع‌آوری شده‌اند. می‌توان یک تابع را مثل یک برنامه کوچک درون برنامه‌ای خود تصور کرد. اگر بخواهید یک کار را چند بار انجام دهید، می‌توانید یک تابع بنویس و هر زمانی که نیاز دارید، آن را فراخوانی کنید.
-      </li>
-      <li>
-        توابع یک مفهوم اساسی در برنامه‌نویسی هستند که برای ساختار و استفاده مجدد از کد ضروری هستند. آنها به شما امکان می‌دهند برنامه‌های پیچیده را به بخش‌های کوچکتر و قابل‌کنترل تقسیم کنید. یک تابع را می‌توان به عنوان یک "مینی برنامه" مستقل در نظر گرفت که یک کار خاص را انجام می‌دهد.
-      </li>
-      <li>
-        <strong>تعریف تابع:</strong>
-        <ul>
-          <li>
-            <strong>نام:</strong> نامی که به تابع خود می‌دهید. باید وظیفه تابع را منعکس کند.
-          </li>
-          <li>
-            <strong>پارامترها:</strong> متغیرهایی که هنگام فراخوانی تابع مقادیر دریافت می‌کنند. آنها به تابع اجازه می‌دهند تا با ورودی‌های مختلف کار کند.
-          </li>
-          <li>
-            <strong>دستورات:</strong> کدی که وظیفه واقعی تابع را انجام می‌دهد.
-          </li>
-          <li>
-            <strong>Return:</strong> کلمه کلیدی که برای بازگرداندن یک مقدار از تابع استفاده می‌شود. این اختیاری است و به وظیفه تابع بستگی دارد.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <strong>فراخوانی تابع:</strong> پس از تعریف یک تابع، می‌توان آن را با ذکر نام آن و ارسال مقادیر پارامترهای مورد نیاز فراخوانی کرد.
-      </li>
-      <li>
-        <strong>مزایای توابع:</strong>
-        <ul>
-          <li>
-            <strong>استفاده مجدد از کد:</strong> توابع به شما این امکان را می‌دهند که یک بلوک کد را بنویسید که می‌توان چندین بار بدون نیاز به نوشتن مجدد آن اجرا کرد.
-          </li>
-          <li>
-            <strong>مدولار بودن:</strong> توابع به شما کمک می‌کنند تا برنامه خود را به بخش‌های کوچکتر و قابل‌مدیریت‌تر تقسیم کنید.
-          </li>
-          <li>
-            <strong>قابلیت نگهداری:</strong> برنامه هایی که از توابع با ساختار مناسب استفاده می کنند، درک، آزمایش و نگهداری آسان تر هستند.
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+                    </p>
+                    <img src="" alt="">
+                    <p>حلقه‌ها ابزاری قدرتمند در برنامه‌نویسی برای جلوگیری از تکرار کد و کنترل اجرای دستورات بر اساس
+                      شرایط هستند. انتخاب بین حلقه‌های For، While و Do-While به موقعیت خاص و نوع شرطی که تکرار باید تحت
+                      آن انجام شود بستگی دارد</p>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              توابع (Functions):
+              <ul>
+                <li>
+                  یک تابع (Function) مجموعه‌ای از انجام دستورالعمل‌ها است که برای دادن یک کار خاص جمع‌آوری شده‌اند.
+                  می‌توان یک تابع را مثل یک برنامه کوچک درون برنامه‌ای خود تصور کرد. اگر بخواهید یک کار را چند بار انجام
+                  دهید، می‌توانید یک تابع بنویس و هر زمانی که نیاز دارید، آن را فراخوانی کنید.
+                </li>
+                <li>
+                  توابع یک مفهوم اساسی در برنامه‌نویسی هستند که برای ساختار و استفاده مجدد از کد ضروری هستند. آنها به
+                  شما امکان می‌دهند برنامه‌های پیچیده را به بخش‌های کوچکتر و قابل‌کنترل تقسیم کنید. یک تابع را می‌توان
+                  به عنوان یک "مینی برنامه" مستقل در نظر گرفت که یک کار خاص را انجام می‌دهد.
+                </li>
+                <li>
+                  <strong>تعریف تابع:</strong>
+                  <ul>
+                    <li>
+                      <strong>نام:</strong> نامی که به تابع خود می‌دهید. باید وظیفه تابع را منعکس کند.
+                    </li>
+                    <li>
+                      <strong>پارامترها:</strong> متغیرهایی که هنگام فراخوانی تابع مقادیر دریافت می‌کنند. آنها به تابع
+                      اجازه می‌دهند تا با ورودی‌های مختلف کار کند.
+                    </li>
+                    <li>
+                      <strong>دستورات:</strong> کدی که وظیفه واقعی تابع را انجام می‌دهد.
+                    </li>
+                    <li>
+                      <strong>Return:</strong> کلمه کلیدی که برای بازگرداندن یک مقدار از تابع استفاده می‌شود. این
+                      اختیاری است و به وظیفه تابع بستگی دارد.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>فراخوانی تابع:</strong> پس از تعریف یک تابع، می‌توان آن را با ذکر نام آن و ارسال مقادیر
+                  پارامترهای مورد نیاز فراخوانی کرد.
+                </li>
+                <li>
+                  <strong>مزایای توابع:</strong>
+                  <ul>
+                    <li>
+                      <strong>استفاده مجدد از کد:</strong> توابع به شما این امکان را می‌دهند که یک بلوک کد را بنویسید که
+                      می‌توان چندین بار بدون نیاز به نوشتن مجدد آن اجرا کرد.
+                    </li>
+                    <li>
+                      <strong>مدولار بودن:</strong> توابع به شما کمک می‌کنند تا برنامه خود را به بخش‌های کوچکتر و
+                      قابل‌مدیریت‌تر تقسیم کنید.
+                    </li>
+                    <li>
+                      <strong>قابلیت نگهداری:</strong> برنامه هایی که از توابع با ساختار مناسب استفاده می کنند، درک،
+                      آزمایش و نگهداری آسان تر هستند.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
-			</ol>
-		</section>
-		<section id="endpoints">
-			<h2>کامپایل کردن یعنی چی؟
-</h2>
-			<section id="endpoints--root">
-				<h3>Root</h3>
-				<p>…</p>
-			</section>
+        </ol>
+      </section>
+      <section id="endpoints">
+        <h2>کامپایل کردن یعنی چی؟
+        </h2>
+        <section id="endpoints--root">
+          <h3>Root</h3>
+          <p>…</p>
+        </section>
       </section>
       <!--morori kotah bar zababnhaye barname nevisi-->
       <section>
-			<section id="endpoints--cities-overview">
-				<h3>Cities Overview</h3>
-				<p>…</p>
-			</section>
-			<section id="endpoints--city-detail">
-				<h3>City Detail</h3>
-				<p>…</p>
-			</section>
-			<section id="endpoints--city-config">
-				<h3>City Config</h3>
-				<p>…</p>
-			</section>
-			<section id="endpoints--city-spots-overview">
-				<h3>City Spots Overview</h3>
-				<p>…</p>
-			</section>
-			<section id="endpoints--city-spot-detail">
-				<h3>City Spot Detail</h3>
-				<p>…</p>
-			</section>
+        <section id="endpoints--cities-overview">
+          <h3>Cities Overview</h3>
+          <p>…</p>
         </section>
+        <section id="endpoints--city-detail">
+          <h3>City Detail</h3>
+          <p>…</p>
+        </section>
+        <section id="endpoints--city-config">
+          <h3>City Config</h3>
+          <p>…</p>
+        </section>
+        <section id="endpoints--city-spots-overview">
+          <h3>City Spots Overview</h3>
+          <p>…</p>
+        </section>
+        <section id="endpoints--city-spot-detail">
+          <h3>City Spot Detail</h3>
+          <p>…</p>
+        </section>
+      </section>
 
-<!--fasle2-->
-<section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-</section>
-<!--fasle3 css-->
-<section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-</section>
+      <!--fasle2-->
+      <section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+      </section>
+      <!--fasle3 css-->
+      <section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+      </section>
 
-<!--fasle4 api-->
-<section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-</section>
+      <!--fasle4 api-->
+      <section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+      </section>
 
-<!--fasle5 gamhaye aval-->
-<section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-</section>
+      <!--fasle5 gamhaye aval-->
+      <section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+      </section>
 
-<!--fasle6 tasalot-->
-<section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-</section>
+      <!--fasle6 tasalot-->
+      <section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+      </section>
 
-<!--tozih gam be gam-->
+      <!--tozih gam be gam-->
 
-<section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-</section>
+      <section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+      </section>
 
-<!--Natije-->
-<section>
-  <section></section>
-</section>
+      <!--Natije-->
+      <section>
+        <section></section>
+      </section>
 
-			<section id="endpoints--city-icons-overview">
-				<h3>City Icons Overview</h3>
-				<p>…</p>
-			</section>
-			<section id="endpoints--city-icon-detail">
-				<h3>City Icon Detail</h3>
-				<p>.....</p>
-			</section>
+      <section id="endpoints--city-icons-overview">
+        <h3>City Icons Overview</h3>
+        <p>…</p>
+      </section>
+      <section id="endpoints--city-icon-detail">
+        <h3>City Icon Detail</h3>
+        <p>.....</p>
+      </section>
 
-		<section id="links">
-			<h2>Links</h2>
-			<p>…</p>
-		</section>
-		<section id="expanders">
-			<h2>Expanders</h2>
-			<p>…..</p>
-		</section>
-		<section id="filters">
-			<h2>Filters</h2>
-			<p>…</p>
-		</section>
-	</div>
-	<nav class="section-nav">
-		<ol>
-			<li><a href="#introduction">مقدمه</a></li>
-			<li><a href="#request-response">چرا یادگیری کدنویسی؟  </a></li>
-			<li><a href="#authentication">مفاهیم برنامه نویسی</a></li>
-			<li><a href="#endpoints">کامپایل کردن یعنی چی؟
-</a> 
-				<ul>
-					<li class=""><a href="#endpoints--root">Root</a></li>
-					<li class=""><a href="#endpoints--cities-overview">Cities Overview</a></li>
-					<li class=""><a href="#endpoints--city-detail">City Detail</a></li>
-					<li class=""><a href="#endpoints--city-config">City Config</a></li>
-					<li class=""><a href="#endpoints--city-spots-overview">City Spots Overview</a></li>
-					<li class=""><a href="#endpoints--city-spot-detail">City Spot Detail</a></li>
-					<li class=""><a href="#endpoints--city-icons-overview">City Icons Overview</a></li>
-					<li class=""><a href="#endpoints--city-icon-detail">City Icon Detail</a></li>
-				</ul>
-			</li>
-			<li class=""><a href="#links">Links</a></li>
-			<li class=""><a href="#expanders">Expanders</a></li>
-			<li class=""><a href="#filters">Filters</a></li>
-		</ol>
-	</nav>
-</main>
-    <script src="script.js"></script>
+      <section id="links">
+        <h2>Links</h2>
+        <p>…</p>
+      </section>
+      <section id="expanders">
+        <h2>Expanders</h2>
+        <p>…..</p>
+      </section>
+      <section id="filters">
+        <h2>Filters</h2>
+        <p>…</p>
+      </section>
+    </div>
+    <nav class="section-nav">
+      <ol>
+        <li><a href="#introduction">مقدمه</a></li>
+        <li><a href="#request-response">چرا یادگیری کدنویسی؟ </a></li>
+        <li><a href="#authentication">مفاهیم برنامه نویسی</a></li>
+        <li><a href="#endpoints">کامپایل کردن یعنی چی؟
+          </a>
+          <ul>
+            <li class=""><a href="#endpoints--root">Root</a></li>
+            <li class=""><a href="#endpoints--cities-overview">Cities Overview</a></li>
+            <li class=""><a href="#endpoints--city-detail">City Detail</a></li>
+            <li class=""><a href="#endpoints--city-config">City Config</a></li>
+            <li class=""><a href="#endpoints--city-spots-overview">City Spots Overview</a></li>
+            <li class=""><a href="#endpoints--city-spot-detail">City Spot Detail</a></li>
+            <li class=""><a href="#endpoints--city-icons-overview">City Icons Overview</a></li>
+            <li class=""><a href="#endpoints--city-icon-detail">City Icon Detail</a></li>
+          </ul>
+        </li>
+        <li class=""><a href="#links">Links</a></li>
+        <li class=""><a href="#expanders">Expanders</a></li>
+        <li class=""><a href="#filters">Filters</a></li>
+      </ol>
+    </nav>
+  </main>
+  <script src="script.js"></script>
 </body>
+
 </html>
