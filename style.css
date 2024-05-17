@@ -1,22 +1,18 @@
-/* 1. Enable smooth scrolling */
-html {
+/* html {
 	scroll-behavior: smooth;
 }
 
-/* 2. Make nav sticky */
 main > nav {
 	position: sticky;
 	top: 2rem;
 	align-self: start;
 }
 
-/* 3. ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active > a {
 	color: #333;
 	font-weight: 500;
 }
 
-/* Sidebar Navigation */
 .section-nav {
 	padding-left: 0;
 	border-left: 1px solid #efefef;
@@ -27,7 +23,7 @@ main > nav {
 	display: block;
 	padding: .125rem 0;
 	color: #ccc;
-	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+	transition: all 50ms ease-in-out; 
 }
 
 .section-nav a:hover,
@@ -35,7 +31,6 @@ main > nav {
 	color: #666;
 }
 
-/** Poor man's reset **/
 * {
 	box-sizing: border-box;
 }
@@ -53,7 +48,6 @@ h1 {
 	font-weight: 300;
 }
 
-/** page layout **/
 main {
 	display: grid;
 	grid-template-columns: 1fr 15em;
@@ -62,7 +56,110 @@ main {
 	margin: 0 auto;
 }
 
-/** enlarge the sections for this demo, so that we have a long scrollable page **/
 section {
 	padding-bottom: 2rem;
+} */
+
+
+/* 1. Enable smooth scrolling */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 2. Make nav sticky */
+main > nav {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+}
+
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active > a {
+  color: #333;
+  font-weight: 100;
+}
+
+/* Sidebar Navigation */
+.section-nav {
+  padding-left: 15px;
+  border-right: 0px solid #efefef;
+  box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-left: 3px solid #efefef;
+  box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.section-nav a {
+  text-decoration: none;
+  display: block;
+  padding: 0.125rem 0;
+  color: #ccc;
+  transition: all 50ms ease-in-out; 
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+  color: #666;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  background: #fff;
+}
+
+body {
+  margin: 0;
+  box-shadow: 7px 0 10px rgba(0, 0, 0, 0.3) inset,
+    -10px 0 10px rgba(0, 0, 0, 0.3) inset;
+  border: 7px solid #c1b9b9;
+
+  line-height: 1.5;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #333;
+  border-radius: 50px 50px 0 0;
+
+}
+img {
+  margin-right: 170px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 300;
+
+}
+p{
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 100px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 15em;
+  max-width: 100em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 780px) {
+	  img {
+	    margin-right: 0px;
+	    text-align: center;
+	  }
+	  p {
+	    text-align: justify;
+	    text-justify: inter-word;
+	    margin-left: 0px;
+	  }
 }
