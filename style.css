@@ -1,93 +1,32 @@
-/* html {
-	scroll-behavior: smooth;
-}
-
-main > nav {
-	position: sticky;
-	top: 2rem;
-	align-self: start;
-}
-
-.section-nav li.active > a {
-	color: #333;
-	font-weight: 500;
-}
-
-.section-nav {
-	padding-left: 0;
-	border-left: 1px solid #efefef;
-}
-
-.section-nav a {
-	text-decoration: none;
-	display: block;
-	padding: .125rem 0;
-	color: #ccc;
-	transition: all 50ms ease-in-out; 
-}
-
-.section-nav a:hover,
-.section-nav a:focus {
-	color: #666;
-}
-
-* {
+/* * {
 	box-sizing: border-box;
+
 }
-
-html, body {
-	background: #fff;
-}
-
-body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
-
-
-h1 {
-	font-weight: 300;
-}
-
-main {
-	display: grid;
-	grid-template-columns: 1fr 15em;
-	max-width: 100em;
-	width: 90%;
-	margin: 0 auto;
-}
-
-section {
-	padding-bottom: 2rem;
-} */
-
-
-/* 1. Enable smooth scrolling */
 
 
 html {
   scroll-behavior: smooth;
+  
 }
 
-/* 2. Make nav sticky */
 main > nav {
   position: sticky;
   top: 2rem;
   align-self: start;
 }
 
-/* 3. ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active > a {
   color: #333;
   font-weight: 100;
 }
 
-/* Sidebar Navigation */
 .section-nav {
   padding-left: 15px;
   border-right: 0px solid #efefef;
   box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.2);
   border-left: 3px solid #efefef;
   box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 .section-nav a {
@@ -163,3 +102,132 @@ section {
 	    margin-left: 0px;
 	  }
 }
+ 
+ */
+
+
+ * {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow:initial;
+}
+
+body {
+  margin: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 100;
+  color: #333;
+}
+
+main > nav {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+}
+
+.section-nav {
+  padding-left: 15px;
+  border-right: 0px solid #efefef;
+  box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-left: 3px solid #efefef;
+  box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  left: -300px; /* Hide sidebar by default */
+  top: 0;
+  height: 100%;
+  width: 250px; /* Adjust width as needed */
+  background: white; /* Background color for sidebar */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.section-nav.expanded {
+  transform: translateX(300px); /* Move sidebar into view */
+}
+
+.section-nav li.active > a {
+  color: #333;
+  font-weight: 100;
+}
+
+.section-nav a {
+  text-decoration: none;
+  display: block;
+  padding: 0.125rem 0;
+  color: #ccc;
+  transition: all 50ms ease-in-out;
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+  color: #666;
+}
+
+.section-nav-toggle {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001; /* Ensure it's above sidebar */
+  background: #111111; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html, body {
+  background: #fff;
+}
+
+img {
+  margin-right: 1px;
+
+}
+
+h1 {
+  font-weight: 300;
+}
+
+
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 15em;
+  max-width: 100em;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+section {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 780px) {
+  .section-nav {
+    position: relative;
+    left: 0;
+    transform: none;
+    height: auto;
+    width: 15em;
+    box-shadow: none;
+  }
+  
+  .section-nav-toggle {
+    display: none;
+  }
+  
+ img {
+    max-width: 100%; 
+    height: auto;
+}
+} 
