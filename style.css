@@ -130,6 +130,7 @@ main > nav {
 }
 
 .section-nav {
+  position: relative;
   padding-left: 15px;
   border-right: 0px solid #efefef;
   box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -190,13 +191,17 @@ html, body {
 
 img {
   margin-right: 1px;
+   max-width: 100%;
+  height: auto;
 
 }
 
 h1 {
   font-weight: 300;
 }
-
+p{
+  font-size: 20px;
+}
 
 
 main {
@@ -230,4 +235,5 @@ section {
     max-width: 100%; 
     height: auto;
 }
-} 
+}  
+
