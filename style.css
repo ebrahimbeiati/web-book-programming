@@ -105,14 +105,13 @@ section {
  
  */
 
-
- * {
+* {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
-  overflow:initial;
+  overflow: initial;
 }
 
 body {
@@ -130,20 +129,20 @@ main > nav {
 }
 
 .section-nav {
-  position: relative;
+  position: fixed;
   padding-left: 15px;
   border-right: 0px solid #efefef;
   box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.2);
   border-left: 3px solid #efefef;
   box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  position: fixed;
   left: -300px; /* Hide sidebar by default */
   top: 0;
   height: 100%;
   width: 250px; /* Adjust width as needed */
   background: white; /* Background color for sidebar */
   z-index: 1000; /* Ensure it's above other content */
+  overflow-y: auto; /* Make sidebar scrollable */
 }
 
 .section-nav.expanded {
@@ -191,18 +190,19 @@ html, body {
 
 img {
   margin-right: 1px;
-   max-width: 100%;
+  max-width: 100%;
   height: auto;
-
 }
 
 h1 {
   font-weight: 300;
 }
-p{
-  font-size: 20px;
-}
 
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 0px;
+}
 
 main {
   display: grid;
@@ -210,30 +210,53 @@ main {
   max-width: 100em;
   width: 90%;
   margin: 0 auto;
-
 }
 
 section {
   padding-bottom: 2rem;
 }
 
-@media screen and (min-width: 780px) {
+/* Responsive styles */
+@media screen and (max-width: 780px) {
   .section-nav {
-    position: relative;
-    left: 0;
-    transform: none;
-    height: auto;
-    width: 15em;
+    position: fixed;
+    transform:rotate(
+      180deg
+    );
+    height: 100%;
+    width: 60%; /* Adjust width as needed */
     box-shadow: none;
   }
-  
-  .section-nav-toggle {
-    display: none;
-  }
-  
- img {
-    max-width: 100%; 
-    height: auto;
-}
-}  
 
+
+  .section-nav-toggle {
+    display:block;
+  }
+
+  img {
+    margin-right: 0px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 0px;
+    font-size: 14px; /* Adjust text size for mobile */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Adjust heading size for mobile */
+  }
+
+  body {
+    font-size: 14px; /* Adjust body text size for mobile */
+  }
+
+  main {
+    display: block; /* Adjust layout for mobile */
+    width: 100%;
+    margin: 0;
+  }
+}
